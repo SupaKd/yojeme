@@ -1,0 +1,59 @@
+.partenaires {
+    padding: 4rem 2rem;
+    background-color: var(--color-link);
+    text-align: center;
+  
+    &__title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: var(--color-dark)
+    }
+  
+    &__grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+  
+    &__logo-container {
+      background: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+  
+    &__logo {
+      max-width: 100px;
+      height: auto;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+  
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  
+    &__marquee {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--color-dark);
+  
+      &-logo {
+        max-width: 80px;
+        margin: 0 2rem;
+        filter: grayscale(100%);
+        transition: filter 0.3s;
+  
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+  
