@@ -1,14 +1,15 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const Hero = lazy(() => import("../pages/Hero"));
-const Marquee = lazy(() => import("../pages/Marquee"));
-const Present = lazy(() => import("./present"));
-const Mission = lazy(() => import("./Mission"));
-const About = lazy(() => import("../pages/About"));
-const Partenaire = lazy(() => import("../pages/Partenaire"));
-const Information = lazy(() => import("../pages/Information"));
+// Importations directes des composants
+import Hero from "../pages/Hero";
+import Marquee from "../pages/Marquee";
+import Present from "./present";
+import Mission from "./Mission";
+import About from "../pages/About";
+import Partenaire from "../pages/Partenaire";
+import Information from "../pages/Information";
 
 function Home() {
   // Hook intersection observer pour Mission
@@ -24,41 +25,18 @@ function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      
-        <Hero />
-      
+      <Hero />
+      <Marquee />
+      <Present />
 
-      <Suspense fallback={<div>Chargement Marquee...</div>}>
-        <Marquee />
-      </Suspense>
-
-      <Suspense fallback={<div>Chargement Present...</div>}>
-        <Present />
-      </Suspense>
-
-      {/* Lazy load Mission seulement si visible */}
+      {/* Affiche Mission seulement si visible */}
       <div ref={missionRef}>
-        {missionInView ? (
-          <Suspense fallback={<div>Chargement Mission...</div>}>
-            <Mission />
-          </Suspense>
-        ) : (
-          // Placeholder pour ne pas casser la mise en page
-          <div style={{ height: "500px" }} />
-        )}
+        {missionInView ? <Mission /> : <div style={{ height: "500px" }} />}
       </div>
 
-      <Suspense fallback={<div>Chargement About...</div>}>
-        <About />
-      </Suspense>
-
-      <Suspense fallback={<div>Chargement Partenaire...</div>}>
-        <Partenaire />
-      </Suspense>
-
-      <Suspense fallback={<div>Chargement Information...</div>}>
-        <Information />
-      </Suspense>
+      <About />
+      <Partenaire />
+      <Information />
     </motion.main>
   );
 }
