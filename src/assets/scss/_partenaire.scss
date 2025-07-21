@@ -1,59 +1,71 @@
 .partenaires {
-    padding: 3rem 0rem;
-    background-color: #fff;
-    text-align: center;
-  
-    &__title {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      color: var(--color-dark)
+  padding: 3rem 0rem;
+  background-color: var(--color-background);
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--color-dark);
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+    /* Mobile full width (par défaut) */
+    width: 100%;
+  }
+
+  &__logo-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+
+  &__logo {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+
+    &:hover {
+      filter: grayscale(0%);
     }
-  
-    &__grid {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      justify-items: center;
-      align-items: center;
-      margin-bottom: 2.5rem;
-    }
-  
-    &__logo-container {
-      background: white;
-      padding: 1rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease;
-    }
-  
-    &__logo {
-      max-width: 100px;
-      height: auto;
-      object-fit: contain;
+  }
+
+  &__marquee {
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+
+
+    &-logo {
+      max-width: 80px;
+      margin: 0 2rem;
       filter: grayscale(100%);
       transition: filter 0.3s;
-  
+
       &:hover {
         filter: grayscale(0%);
       }
     }
-  
-    &__marquee {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 2px solid var(--color-primary);
-  
-      &-logo {
-        max-width: 80px;
-        margin: 0 2rem;
-        filter: grayscale(100%);
-        transition: filter 0.3s;
-  
-        &:hover {
-          filter: grayscale(0%);
-        }
-      }
-    }
   }
-  
+
+  /* Media queries */
+  @media (min-width: 768px) {
+   padding: 3rem 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 3rem  10rem;
+  }
+}
