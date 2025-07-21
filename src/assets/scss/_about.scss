@@ -1,7 +1,49 @@
+@keyframes sandDrift {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+  }
+  50% {
+    transform: translate(30%, 20%) scale(1.2);
+  }
+  100% {
+    transform: translate(0%, 0%) scale(1);
+  }
+}
+
+
 .equipe {
+  position: relative;
   padding: 2rem 1rem;
   background-color: #fff;
   text-align: center;
+  overflow: hidden;
+
+  // 🏜️ FOND SABLE RENFORCÉ
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background:
+      radial-gradient(circle at 10% 10%, #e7b872 0%, transparent 30%),
+      radial-gradient(circle at 80% 20%, #f5c57d 0%, transparent 30%),
+      radial-gradient(circle at 30% 80%, #d29b5e 0%, transparent 30%),
+      radial-gradient(circle at 60% 60%, #e2a858 0%, transparent 30%),
+      radial-gradient(circle at 50% 30%, #c99a60 0%, transparent 30%),
+      radial-gradient(circle at 90% 70%, #f3c87a 0%, transparent 30%);
+    animation: sandDrift 20s infinite linear;
+    opacity: 0.6;
+    filter: blur(20px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 
   h2 {
     font-size: 2rem;
@@ -68,19 +110,57 @@
   .wave-bottom {
     line-height: 0;
     overflow: hidden;
+
     svg {
       display: block;
       width: 100%;
       height: 100px;
     }
   }
+
+
+
   
 
   @media (min-width: 768px) {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
 
     h2 {
       font-size: 2rem;
+    }
+
+    // Cacher les contrôles Swiper à partir de tablette
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-pagination {
+      display: none !important;
+    }
+
+    .equipe__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    // Transformer les slides en une grille responsive
+    .equipe__slider {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 0;
+
+      .swiper-slide {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    padding: 20rem 2rem;
+
+    h2 {
+      font-size: 4rem;
     }
 
     // Cacher les contrôles Swiper à partir de tablette

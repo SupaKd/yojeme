@@ -47,7 +47,7 @@
         background-color: var(--color-primary);
         color: #fff;
         border: none;
-        padding: 0.9rem 2rem;
+        padding: 1.5rem 2rem;
         font-size: 1rem;
         border-radius: 2rem;
         cursor: pointer;
@@ -82,7 +82,7 @@
         }
         button {
           font-size: 1.2rem;
-          padding: 1rem 2.5rem;
+          padding: 1.5rem 2.5rem;
         }
       }
     }
@@ -97,7 +97,7 @@
         }
         button {
           font-size: 1.4rem;
-          padding: 1.2rem 3rem;
+          padding: 1.5rem 3rem;
         }
       }
     }
@@ -114,11 +114,11 @@
 
   .mission {
     position: relative;
-    padding: 6rem 2rem 0rem 2rem;
-    background: #fff
+    padding: 6rem 2rem 6rem 2rem;
+    background: var(--color-dark);
 ;
     overflow: hidden;
-  
+    
     // 🔹 Vagues décoratives
     &::before,
     &::after {
@@ -149,9 +149,9 @@
     // 🔹 Titre
     h2 {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: var(--color-dark);
+      font-size: 2.5rem;
+      margin: 2rem 0rem 4rem 0rem;
+      color: var(--color-secondary);
     }
   
     // 🔹 Conteneur central
@@ -169,14 +169,13 @@
   
     // 🔹 Cartes
     &__card {
-      background: #fff;
+      background: var(--color-background);
       padding: 2rem;
       border-radius: 1rem;
-      border:solid 1px var(--color-secondary);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       text-align: center;
       transition: background 0.3s;
-  
+      
       h3 {
         margin-top: 1rem;
         font-size: 1.2rem;

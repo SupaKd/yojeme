@@ -1,6 +1,6 @@
 .partenaires {
-    padding: 4rem 2rem;
-    background-color: var(--color-link);
+    padding: 3rem 0rem;
+    background-color: #fff;
     text-align: center;
   
     &__title {
@@ -42,7 +42,7 @@
     &__marquee {
       margin-top: 2rem;
       padding-top: 1rem;
-      border-top: 1px solid var(--color-dark);
+      border-top: 2px solid var(--color-primary);
   
       &-logo {
         max-width: 80px;
