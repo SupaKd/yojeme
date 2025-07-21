@@ -21,7 +21,7 @@ function Header() {
     <header className="header">
       <div className="container">
         <Link to="/">
-        <img src="/ado.webp" alt="logo" className="logo" />
+        <img src="/logo-yojeme.webp" alt="logo" className="logo" />
         </Link>
 
         <nav className={classNames("nav", { open: menuOpen })}>

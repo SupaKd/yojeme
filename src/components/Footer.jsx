@@ -13,7 +13,7 @@ function Footer() {
       >
         <div className="footer__top">
           <div className="footer__logo">
-            <img src="/ado.webp" alt="logo" />
+            <img src="/logo-yojeme.webp" alt="logo" />
             <p>Agir pour un avenir meilleur</p>
           </div>
 

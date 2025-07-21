@@ -2,7 +2,16 @@
   padding: 3rem 0rem;
   background-color: var(--color-background);
   text-align: center;
+  border-top: solid 4px var(--color-dark);
 
+  div {
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 60px;
+      margin-right: 3rem;
+    }
+  }
   &__title {
     font-size: 2rem;
     font-weight: 600;
@@ -23,7 +32,6 @@
   }
 
   &__logo-container {
-    background: white;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -49,7 +57,7 @@
 
 
     &-logo {
-      max-width: 80px;
+      max-width: 150px;
       margin: 0 2rem;
       filter: grayscale(100%);
       transition: filter 0.3s;
