@@ -22,9 +22,9 @@ function Presentation() {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, eius
           ducimus expedita, nulla dolorem aperiam vitae, itaque nihil quis ad
           labore dolorum modi doloribus? Ullam necessitatibus blanditiis iure
-          minima rerumducimus expedita, nulla dolorem aperiam vitae, itaque nihil quis ad
-          labore dolorum modi doloribus? Ullam necessitatibus blanditiis iure
-          minima rerum...
+          minima rerumducimus expedita, nulla dolorem aperiam vitae, itaque
+          nihil quis ad labore dolorum modi doloribus? Ullam necessitatibus
+          blanditiis iure minima rerum...
         </p>
       </motion.div>
 
@@ -39,7 +39,7 @@ function Presentation() {
           modules={[Autoplay]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           speed={800}
-          loop={true}
+          loop={images.length > 1}
           spaceBetween={20}
           slidesPerView={1}
         >

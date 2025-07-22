@@ -21,7 +21,7 @@ function Footer() {
             <Link to="/">Accueil</Link>
             <Link to="/about">À propos</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/mentions">Mentions légales</Link>
+            <Link to="/mention">Mentions légales</Link>
           </nav>
 
           <div className="footer__socials">

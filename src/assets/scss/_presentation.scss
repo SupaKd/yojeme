@@ -30,14 +30,17 @@
   
     .slider {
       flex: 1;
+      position: relative;
       max-width: 350px;
-  
+      width: 100%;
+    
       img {
         width: 100%;
         border-radius: 1rem;
         object-fit: cover;
       }
     }
+    
   
   
     @media screen and (min-width: 768px) {
