@@ -1,0 +1,116 @@
+.impact {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+  
+    &__left,
+    &__right {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;   // centrage vertical
+      align-items: center;       // centrage horizontal
+      text-align: center;
+    }
+  
+    &__left {
+      background: #fff;
+  
+      h2 {
+        font-size: 1.8rem;
+        color: #1a1a1a;
+      }
+  
+      .subtitle {
+        color: #3b7d34;
+        margin: 1rem 0;
+        font-style: italic;
+      }
+  
+      .description {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        max-width: 500px;
+      }
+  
+      .buttons {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  
+    &__right {
+      background: url("/ado.webp") center/cover no-repeat;
+      color: white;
+  
+      .overlay {
+        background-color: rgba(0, 47, 73, 0.8);
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 400px;
+  
+        h3 {
+          font-size: 1.4rem;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 0.95rem;
+          margin-bottom: 1rem;
+        }
+  
+        .cta {
+          color: #fdd835;
+          font-weight: bold;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    // 💻 Desktop
+    @media (min-width: 768px) {
+      flex-direction: row;
+      min-height: 50vh;
+  
+      &__left,
+      &__right {
+        flex: 1;
+      }
+  
+      .buttons {
+        flex-direction: row;
+      }
+    }
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    border: none;
+  
+    &--primary {
+      background: #fdd835;
+      color: #000;
+      font-weight: bold;
+    }
+  
+    &--ghost {
+      background: transparent;
+      border: 2px solid #000;
+      color: #000;
+    }
+  }
+  

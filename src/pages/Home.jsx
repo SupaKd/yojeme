@@ -8,6 +8,7 @@ import About from "../pages/About";
 import Partenaire from "../pages/Partenaire";
 import Information from "../pages/Information";
 import Mission from "./Mission";
+import ImpactSection from "./ImpactSection";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
 
       {/* Affichage direct du composant Mission */}
       <Mission />
+      <ImpactSection />
 
       <About />
       <Partenaire />
