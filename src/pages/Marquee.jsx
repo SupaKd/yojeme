@@ -1,10 +1,21 @@
 import Marquee from "react-fast-marquee";
 
 function Bande() {
-    return(
-        <Marquee speed={40} className="marquee">
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt natus eligendi nemo, cumque, hic a animi, deserunt maxime voluptate nesciunt repudiandae minus nobis vitae quas totam ut voluptatum consequuntur. Maxime?
-      </Marquee>
-    )
+  return (
+    <Marquee speed={40} className="marquee" gradient={false}>
+      <p>
+        Ensemble, construisons des projets éducatifs, culturels et humains qui ont du sens. Rejoignez l'élan de Yojeme !
+      </p>
+      <span className="separator">•</span>
+      <p>
+        Yojeme agit pour l’épanouissement humain à travers des projets solidaires, innovants et porteurs de sens.
+      </p>
+      <span className="separator">•</span>
+      <p>
+        Yojeme accompagne, forme et relie ceux qui œuvrent pour un monde plus humain, plus solidaire et plus créatif.
+      </p>
+    </Marquee>
+  );
 }
+
 export default Bande;

@@ -16,7 +16,8 @@ function Informations() {
 
         <div className="informations__content">
           <p className="informations__item">
-            <strong>N° d’association :</strong> W123456789
+            <strong>N° SIRET de l’association :</strong> 945 270 817 00014
+            <strong>Code APE :</strong> 94.99Z
           </p>
 
           <p className="informations__item">

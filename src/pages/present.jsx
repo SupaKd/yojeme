@@ -17,15 +17,36 @@ function Presentation() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2>Présentation</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, eius
-          ducimus expedita, nulla dolorem aperiam vitae, itaque nihil quis ad
-          labore dolorum modi doloribus? Ullam necessitatibus blanditiis iure
-          minima rerumducimus expedita, nulla dolorem aperiam vitae, itaque
-          nihil quis ad labore dolorum modi doloribus? Ullam necessitatibus
-          blanditiis iure minima rerum...
-        </p>
+        <div className="text-container">
+          <h2>Présentation</h2>
+          <h3>À propos de l'association Yojeme</h3>
+          <p>
+            L'association <strong>Yojeme</strong> a pour objet le conseil, la
+            conception, l'ingénierie ou l'organisation de projets
+            socio-éducatifs, culturels ou sportifs. Sa finalité est l'aide à
+            l'épanouissement humain par le développement de plusieurs axes qui
+            sont :
+          </p>
+          <div className="list-container">
+            <ul>
+              <li>Des <strong>projets</strong> répondant à des besoins humains.</li>
+              <li>
+                Un réseau de partenaires partageant les <strong>valeurs</strong> de
+                l'association.
+              </li>
+              <li>
+                L'aide aux membres sur leurs projets en proposant son
+                savoir-faire ou celui de son réseau.
+              </li>
+              <li>
+                Des formations ou actions de formations à destination de ses
+                membres ou de personnes y participant via l'association ou une
+                structure membre.
+              </li>
+              <li>Le développement et l'innovation.</li>
+            </ul>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div

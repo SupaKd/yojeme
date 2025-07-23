@@ -21,8 +21,8 @@ function Home() {
       <Mission />
       <ImpactSection />
 
-      <About />
       <Partenaire />
+      <About />
       <Information />
     </main>
   );

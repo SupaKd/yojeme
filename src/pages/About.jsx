@@ -24,10 +24,10 @@ function useIsMobile(maxWidth = 767) {
 
 // Données fictives
 const teamMembers = [
-  { name: "Ali", role: "Educateur", img: "/ado.webp" },
-  { name: "Sofia", role: "Médecin", img: "/ado.webp" },
-  { name: "Mehdi", role: "Animateur", img: "/ado.webp" },
-  { name: "Sarah", role: "Assistante sociale", img: "/ado.webp" },
+  { name: "M. Jérémy Morelle", role: "Directeur de l'association", img: "/ado.webp" },
+  { name: "M. Medhi Moussaid", role: "Président", img: "/ado.webp" },
+  { name: "M. Youssef Afessar", role: "Trésorier", img: "/ado.webp" },
+  { name: "Mme Rabab El Massaoudi", role: "Secrétaire", img: "/ado.webp" },
 ];
 
 function Equipe() {
@@ -45,7 +45,7 @@ function Equipe() {
         <h2>
           <Users size={28} /> Notre Équipe
         </h2>
-        <p>Découvrez les professionnels engagés pour le bien-être des enfants.</p>
+        <p>Découvrez des professionnels engagés.</p>
 
         {isMobile ? (
           <Swiper

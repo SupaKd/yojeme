@@ -17,7 +17,7 @@ function Partenaires() {
     <section className="partenaires">
       <h2 className="partenaires__title">Nos partenaires officiels</h2>
       <div>
-        <img src="palmier.webp" alt="img-partner" />
+        <img src="palmier.webp" alt="img-partner" className="palmier"/>
 
         {/* Marquee optionnel */}
         <Marquee
@@ -35,6 +35,8 @@ function Partenaires() {
             />
           ))}
         </Marquee>
+        <img src="palmier.webp" alt="img-partner" className="palmier"/>
+
       </div>
     </section>
   );

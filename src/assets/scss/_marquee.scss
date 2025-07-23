@@ -1,7 +1,26 @@
 .marquee {
-    background: var(--color-muted);
-    padding: 0.8rem 0;
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--color-dark);
+  background: var(--color-muted);
+  padding: 0.8rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    margin: 0;
+    padding: 0 1rem;
+    white-space: nowrap;
+    font-size: 1.2rem;
   }
+
+  .separator {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    padding: 0 1rem;
+    opacity: 0.5;
+    user-select: none;
+  }
+}

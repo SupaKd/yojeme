@@ -34,7 +34,7 @@ function Mission() {
     {
       icon: <Globe size={40} />,
       title: "Partenariats",
-      desc: "Travail avec les ONG locales, les écoles et les familles pour un impact durable.",
+      desc: "Travail avec les entreprises locales pour un impact durable.",
     },
   ];
 
