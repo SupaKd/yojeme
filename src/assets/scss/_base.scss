@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; 
   scroll-behavior: smooth;
 }
 
@@ -25,6 +25,7 @@ h1, h2, h3 {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   color:#1E2A38;
+  line-height: 1.2;
 }
 
 a {
@@ -40,10 +41,11 @@ a {
 
 main {
   flex: 1;
+  width: 100%;
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   padding: 0;
   margin-top:8rem;
 }
