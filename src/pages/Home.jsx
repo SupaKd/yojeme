@@ -5,10 +5,8 @@ import Hero from "../pages/Hero";
 import Marquee from "../pages/Marquee";
 import Present from "./present";
 import About from "../pages/About";
-import Partenaire from "../pages/Partenaire";
 import Information from "../pages/Information";
 import Mission from "./Mission";
-import ImpactSection from "./ImpactSection";
 
 function Home() {
   return (
@@ -17,11 +15,8 @@ function Home() {
       <Marquee />
       <Present />
 
-      {/* Affichage direct du composant Mission */}
       <Mission />
-      <ImpactSection />
 
-      <Partenaire />
       <About />
       <Information />
     </main>

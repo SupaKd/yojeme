@@ -39,7 +39,7 @@
       position: relative;
       overflow: hidden;
       border: solid 2px var(--color-text);
-      padding: 2.5rem;
+      padding: 2rem;
       border-radius: 10px;
       background-color: var(--color-accent);
       color: var(--color-background);
@@ -49,8 +49,8 @@
       &::before {
         content: '';
         position: absolute;
-        top: -30%;
-        right: -30%;
+        top: -50%;
+        right: -50%;
         width: 150%;
         height: 150%;
         background: linear-gradient(

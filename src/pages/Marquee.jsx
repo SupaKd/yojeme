@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 function Bande() {
   return (
     <Marquee speed={40} className="marquee" gradient={false}>
+      <span className="separator">•</span>
       <p>
         Ensemble, construisons des projets éducatifs, culturels et humains qui ont du sens. Rejoignez l'élan de Yojeme !
       </p>
