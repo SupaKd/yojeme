@@ -9,7 +9,7 @@ const images = ["img1.webp", "img2.webp", "img3.webp"];
 
 function Presentation() {
   return (
-    <section className="presentation" id="#present">
+    <section id="presentation" className="presentation">
       <motion.div
         className="text"
         initial={{ opacity: 0, x: -50 }}
@@ -29,10 +29,12 @@ function Presentation() {
           </p>
           <div className="list-container">
             <ul>
-              <li>Des <strong>projets</strong> répondant à des besoins humains.</li>
               <li>
-                Un réseau de partenaires partageant les <strong>valeurs</strong> de
-                l'association.
+                Des <strong>projets</strong> répondant à des besoins humains.
+              </li>
+              <li>
+                Un réseau de partenaires partageant les <strong>valeurs</strong>{" "}
+                de l'association.
               </li>
               <li>
                 L'aide aux membres sur leurs projets en proposant son
