@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Users } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -43,7 +42,7 @@ function Equipe() {
         viewport={{ once: true }}
       >
         <h2>
-          <Users size={28} /> Notre Équipe
+           Notre Équipe
         </h2>
         <p>Découvrez des professionnels engagés.</p>
 

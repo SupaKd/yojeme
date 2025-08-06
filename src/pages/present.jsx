@@ -21,7 +21,7 @@ function Presentation() {
           <h2>Présentation</h2>
           <h3>À propos de l'association Yojeme</h3>
           <p>
-            L'association <strong>Yojeme</strong> a pour objet le conseil, la
+            L'association <strong>Yojeme</strong> à pour objet le conseil, la
             conception, l'ingénierie ou l'organisation de projets
             socio-éducatifs, culturels ou sportifs. Sa finalité est l'aide à
             l'épanouissement humain par le développement de plusieurs axes qui
