@@ -13,7 +13,9 @@ function Hero() {
           Nous accompagnons les jeunes dans les zones désertiques à travers des
           projets éducatifs et sociaux.
         </p>
-        <button>Découvrir l'association</button>
+        <a href="#presentation">
+          <button>Découvrir l'association</button>
+        </a>
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 import { CheckCircle, XCircle, Loader2, Mail } from "lucide-react";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 function Contact() {
   const formRef = useRef();
@@ -39,7 +39,6 @@ function Contact() {
 
   return (
     <section className="contact">
-      <motion.div className="contact__container" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <h2> Contactez-nous <Mail className="icon" /></h2>
 
         <form ref={formRef} onSubmit={sendEmail}>
@@ -93,7 +92,6 @@ function Contact() {
             </motion.div>
           )}
         </form>
-      </motion.div>
     </section>
   );
 }

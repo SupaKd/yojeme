@@ -1,6 +1,5 @@
 import { HandHeart, Users, Leaf, Globe } from "lucide-react";
 import { motion } from "framer-motion";
-
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (i) => ({
@@ -39,7 +38,7 @@ function Mission() {
   ];
 
   return (
-    <section className="mission">
+    <section className="mission" id="mission">
       <div className="container">
         <h2>Nos actions principales</h2>
         <div className="mission__grid">
