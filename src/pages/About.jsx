@@ -24,7 +24,7 @@ function useIsMobile(maxWidth = 767) {
 // Données fictives
 const teamMembers = [
   { name: "M. Jérémy Morelle", role: "Directeur de l'association", img: "/ado.webp" },
-  { name: "M. Medhi Moussaid", role: "Président", img: "/ado.webp" },
+  { name: "M. Mehdi Moussaid", role: "Président", img: "/ado.webp" },
   { name: "M. Youssef Afessar", role: "Trésorier", img: "/ado.webp" },
   { name: "Mme Rabab El Massaoudi", role: "Secrétaire", img: "/ado.webp" },
 ];

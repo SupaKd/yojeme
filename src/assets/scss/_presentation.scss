@@ -47,7 +47,7 @@
       isolation: isolate;
     
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -50%;
         right: -50%;
@@ -87,8 +87,8 @@
     }
   }
 
-  // Tablettes (>=768px)
-  @media screen and (min-width: 768px) {
+  /* Tablette */
+  @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -113,8 +113,8 @@
     }
   }
 
-  // Desktop standard (>=1024px)
-  @media screen and (min-width: 1024px) {
+  /* Desktop */
+  @media (min-width: 1024px) {
     .text {
       h2 {
         font-size: 3rem;
@@ -127,14 +127,7 @@
     }
 
     .slider {
-      max-width: 500px;
-    }
-  }
-
-  // Grands écrans (>=1440px)
-  @media screen and (min-width: 1440px) {
-    .slider {
-      max-width: 700px;
+      max-width: 600px;
     }
   }
 }
